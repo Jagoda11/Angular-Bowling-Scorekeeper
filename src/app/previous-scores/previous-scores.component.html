@@ -1,0 +1,17 @@
+<div *ngIf="allScores && allScores.length > 0" class="col-md-6">
+  <h4>Previous scores</h4>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Round</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of allScores">
+      <td>{{item.round}}</td>
+      <td>{{item.score}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
