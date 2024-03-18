@@ -1,15 +1,15 @@
 {
-  "name": "bowling-app",
+  "name": "angular-bowling-scorekeeper",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build-prod": "ng build --prod",
-    "test": "ng test",
-    "test-single-run": "ng test --browsers ChromeHeadless --watch=false",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "echo '🔧 Running ng command...' && ng",
+    "start": "echo '🚀 Starting the application...' && ng serve",
+    "build": "echo '🏗️ Building the application...' && ng build",
+    "build-prod": "echo '🏭 Building the application for production...' && ng build --prod",
+    "test": "echo '🧪 Running tests...' && ng test",
+    "test-single-run": "echo '🔬 Running tests (single run)...' && ng test --browsers ChromeHeadless --watch=false",
+    "lint": "echo '🧹 Running linter...' && ng lint",
+    "e2e": "echo '🌐 Running end-to-end tests...' && ng e2e"
   },
   "private": true,
   "dependencies": {

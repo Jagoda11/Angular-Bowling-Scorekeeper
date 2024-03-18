@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bowling-app": {
+    "Angular-Bowling-Scorekeeper": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bowling-app",
+            "outputPath": "dist/Angular-Bowling-Scorekeeper",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -43,7 +43,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -66,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bowling-app:build"
+            "buildTarget": "Angular-Bowling-Scorekeeper:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bowling-app:build:production"
+              "buildTarget": "Angular-Bowling-Scorekeeper:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bowling-app:build"
+            "buildTarget": "Angular-Bowling-Scorekeeper:build"
           }
         },
         "test": {
@@ -114,15 +113,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bowling-app:serve"
+            "devServerTarget": "Angular-Bowling-Scorekeeper:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bowling-app:serve:production"
+              "devServerTarget": "Angular-Bowling-Scorekeeper:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "bowling-app"
+    }
+  },
+  "defaultProject": "Angular-Bowling-Scorekeeper",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -6,17 +6,20 @@
 
 <form *ngIf="!isGameOver">
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group col-12 col-md-6">
       <label for="firstRoll">First Roll</label>
-      <input type="number" min="0" max="10" [(ngModel)]="firstRoll" (ngModelChange)="evaluateThirdRoll()" class="form-control" id="firstRoll" name="firstRoll" placeholder="First Roll">
+      <input type="number" min="0" max="10" [(ngModel)]="firstRoll" (ngModelChange)="evaluateThirdRoll()"
+        class="form-control" id="firstRoll" name="firstRoll" placeholder="First Roll">
     </div>
-    <div class="form-group col-md-6">
+    <div class="form-group col-12 col-md-6">
       <label for="secondRoll">Second Roll</label>
-      <input type="number" min="0" max="10" [(ngModel)]="secondRoll" (ngModelChange)="evaluateThirdRoll()" class="form-control" id="secondRoll" name="secondRoll" placeholder="Second Roll">
+      <input type="number" min="0" max="10" [(ngModel)]="secondRoll" (ngModelChange)="evaluateThirdRoll()"
+        class="form-control" id="secondRoll" name="secondRoll" placeholder="Second Roll">
     </div>
-    <div *ngIf="showThirdRoll" class="form-group col-md-6">
+    <div *ngIf="showThirdRoll" class="form-group col-12 col-md-6">
       <label for="thirdRoll">Third Roll</label>
-      <input type="number" min="0" max="10" [(ngModel)]="thirdRoll" class="form-control" id="thirdRoll" name="thirdRoll" placeholder="Third Roll">
+      <input type="number" min="0" max="10" [(ngModel)]="thirdRoll" class="form-control" id="thirdRoll" name="thirdRoll"
+        placeholder="Third Roll">
     </div>
   </div>
 
@@ -24,10 +27,6 @@
     The values should be between 0 and 10
   </div>
   <button type="submit" class="btn btn-primary" (click)="onClick()">Submit</button>
-  </form>
+</form>
 
-
-  <app-new-game *ngIf="isGameOver" (click)="createNewGame()"></app-new-game>
-
-
-
+<app-new-game *ngIf="isGameOver" (click)="createNewGame()"></app-new-game>
