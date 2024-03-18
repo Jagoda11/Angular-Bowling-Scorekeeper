@@ -8,9 +8,8 @@ describe('PreviousScoresComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PreviousScoresComponent ]
-    })
-    .compileComponents();
+      declarations: [PreviousScoresComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('PreviousScoresComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create 🛠️', () => {
     expect(component).toBeTruthy();
   });
 });

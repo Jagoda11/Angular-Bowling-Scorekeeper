@@ -5,5 +5,5 @@ export class Game {
 export class Frame {
   first: number;
   second: number;
-  third?: number; //optional parametre
+  third?: number; //optional parameter
 }

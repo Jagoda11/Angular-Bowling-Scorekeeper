@@ -8,9 +8,8 @@ describe('NewGameComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewGameComponent ]
-    })
-    .compileComponents();
+      declarations: [NewGameComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('NewGameComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create 🛠️', () => {
     expect(component).toBeTruthy();
   });
 });

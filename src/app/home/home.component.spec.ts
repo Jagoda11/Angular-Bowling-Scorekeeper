@@ -1,14 +1,17 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
+import { NewGameComponent } from '../new-game/new-game.component';
+import { PreviousScoresComponent } from '../previous-scores/previous-scores.component';
 
-describe('HomeComponent', () => {
+describe('HomeComponent 🏠', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent],
+      declarations: [HomeComponent, NewGameComponent, PreviousScoresComponent],
+      imports: [FormsModule],
     }).compileComponents();
   }));
 
@@ -18,11 +21,11 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create 🛠️', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should show the score', () => {
+  it('should show the score 🎯', () => {
     // arrange
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.componentInstance.firstRoll = 4;
@@ -40,7 +43,7 @@ describe('HomeComponent', () => {
     expect(currentRound).toEqual('Current round: 2');
   });
 
-  it('should show the error - no second roll', () => {
+  it('should show the error - no second roll ⚠️', () => {
     // arrange
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.componentInstance.firstRoll = 4;
@@ -55,7 +58,7 @@ describe('HomeComponent', () => {
     expect(errorMessage).toBeTruthy();
   });
 
-  it('should show the error - invalid values', () => {
+  it('should show the error - invalid values ⚠️', () => {
     // arrange
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.componentInstance.firstRoll = 7;
@@ -73,7 +76,7 @@ describe('HomeComponent', () => {
     expect(currentRound).toEqual('Current round: 1');
   });
 
-  it('should show third Roll on the 10th round', () => {
+  it('should show third Roll on the 10th round 🎳', () => {
     // arrange
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.componentInstance.currentRound = 10;
@@ -92,7 +95,7 @@ describe('HomeComponent', () => {
     expect(currentRound).toEqual('Current round: 10');
   });
 
-  it('should hide the boxes after the 10th round', () => {
+  it('should hide the boxes after the 10th round 📦', () => {
     // arrange
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.componentInstance.currentRound = 10;
