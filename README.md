@@ -1,7 +1,8 @@
 # 🎳 Bowling App 🎳
 
-![GitHub Issues](https://img.shields.io/github/issues/Jagoda11/Angular-Bowling-Scorekeeper?style=flat-square&color=orange)
-![Last Commit](https://img.shields.io/github/last-commit/Jagoda11/Angular-Bowling-Scorekeeper?style=flat-square&color=purple)
+![GitHub Issues](https://img.shields.io/github/issues/Jagoda11/Angular-Bowling-Scorekeeper?style=flat-square&color=blue)
+![Last Commit](https://img.shields.io/github/last-commit/Jagoda11/Angular-Bowling-Scorekeeper/master?style=flat-square&color=green)
+
 
 This project uses Angular version 9.1.3.
 
