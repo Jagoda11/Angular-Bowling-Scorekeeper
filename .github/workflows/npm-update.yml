@@ -2,11 +2,11 @@ name: 🚀 Dependency Update and Vulnerability Scan
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    - cron: '0 2 * * *'  # Runs daily at 2 AM UTC
+  workflow_dispatch:  # Allows manual triggering
   push:
     branches:
-      - master
+      - master  # Runs on pushes to the master branch
 
 jobs:
   update-and-scan:
@@ -29,9 +29,10 @@ jobs:
 
       - name: ⬆️ Update all packages
         run: |
-          ncu -u
-          npm install
+          ncu -u  # Update package.json with the latest versions
+          npm install --legacy-peer-deps  # Install dependencies with legacy peer deps handling
 
+      # Since we're using --legacy-peer-deps above, the step below is likely redundant, but keeping for thoroughness
       - name: 📦 Update dependencies with legacy peer deps
         run: npm update --legacy-peer-deps
 
