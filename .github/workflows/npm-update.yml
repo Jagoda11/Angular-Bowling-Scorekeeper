@@ -32,15 +32,8 @@ jobs:
           ncu -u  # Update package.json with the latest versions
           npm install --legacy-peer-deps  # Install dependencies with legacy peer deps handling
 
-      # Since we're using --legacy-peer-deps above, the step below is likely redundant, but keeping for thoroughness
       - name: 📦 Update dependencies with legacy peer deps
         run: npm update --legacy-peer-deps
-
-      - name: 🐶 Install Husky
-        run: npx husky install
-
-      - name: 🖋️ Format code
-        run: npm run format
 
       - name: 🎭 Mask Debricked credentials
         run: |
