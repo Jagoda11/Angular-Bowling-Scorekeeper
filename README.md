@@ -2,9 +2,8 @@
 
 ![GitHub Issues](https://img.shields.io/github/issues/Jagoda11/Angular-Bowling-Scorekeeper?style=flat-square&color=blue)
 ![Last Commit](https://img.shields.io/github/last-commit/Jagoda11/Angular-Bowling-Scorekeeper/master?style=flat-square&color=green)
+![Build Status](https://github.com/Jagoda11/Angular-Bowling-Scorekeeper/actions/workflows/npm-update.yml/badge.svg?branch=master)
 
-
-This project uses Angular version 9.1.3.
 
 ## 📝 Description 📝
 A game consists of ten frames. Frame 1-9 are composed of two rolls. 
